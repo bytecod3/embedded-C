@@ -1,3 +1,3 @@
-## Multi-platform:100: C code for microcontrollers using [PlatformIO](https://github.com/platformio)
+## Multi-platform:100: C code for microcontrollers using [PlatformIO](https://platformio.org/)
 Refer to your MCU's datasheet:page_facing_up: for PORTS and their respective addresses   
-Further reading at [PlatformIO](https://github.com/platformio) :books:
+Further reading at [PlatformIO](https://platformio.org/) :books:
