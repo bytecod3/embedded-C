@@ -18,7 +18,11 @@ enum digits{
   NINE  =  0x77
 };
 
-void myDelay(unsigned long seconds);
+unsigned long seconds;
+unsigned long * pSeconds;
+pSeconds = &seconds;
+
+void myDelay(unsigned long *p);
 void setDigit(unsigned int digit);
 
 uint8_t * portDDRB =  0x24; // address to PORTB DDR
@@ -103,9 +107,15 @@ void setDigit(uint8_t digit){
 
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  for(uint8_t i = 0; i <10; i++){
+    setDigit(i);  // display the digit
+    myDelay(500); // delay 500 milliseconds
+  }
 }
 
-void myDelay(unsigned char seconds){
-  for(;;;)
+void myDelay(unsigned long pSeconds){
+  volatile unsigned long i;
+  unsigned long endTime = 1000 * pSeconds;
+
+  for(i=0; i<endTime; i++);
 }
