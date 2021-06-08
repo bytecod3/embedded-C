@@ -2,6 +2,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+
 int main(void){
   // inits
   DDRB |= (1 << PB0);
