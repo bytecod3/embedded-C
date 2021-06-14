@@ -1,6 +1,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+
 #define DELAY_TIME 20
 
 void pov_display(uint8_t one_byte){
