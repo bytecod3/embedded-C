@@ -33,7 +33,6 @@ int main(){
       /* code */
       pov_display()
     }
-    
 
     PORTB = 0;
     _delay_ms(10); 

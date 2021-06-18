@@ -2,6 +2,7 @@
 
 // default address for atmega328p DDRB
 unsigned char *portDDRC;
+unsigned char *portDDRB;
 unsigned char *portC;
 
 void setup() {
